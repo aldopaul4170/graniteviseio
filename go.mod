@@ -1,3 +1,3 @@
-module raft_peer_f461d2
+module raft_peer_96ddae
 
 go 1.19

